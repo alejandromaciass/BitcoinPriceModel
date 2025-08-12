@@ -1001,4 +1001,4 @@ if __name__ == '__main__':
     print("Features: Real-time updates (every 25 seconds), AI Trading Agent, Monte Carlo, Analytics")
     print(f"Access at: http://localhost:{port}")
     get_bitcoin_data()
-    socketio.run(app, host='0.0.0.0', port=port, debug=False)
+    socketio.run(app, host='0.0.0.0', port=port, debug=False, allow_unsafe_werkzeug=True)
